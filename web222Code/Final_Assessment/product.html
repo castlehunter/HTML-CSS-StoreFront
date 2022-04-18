@@ -26,7 +26,6 @@
             </div>
         </header>
 
-
         <nav>
             <ul>
                 <li><a href="honesty.html">Honesty</a></li>
@@ -43,49 +42,49 @@
                 <!-- Product ID -->
                 <div class="individualForm">
                     <label for="product-id" title="Digit only and 8 characters long (ex. 44455599).">Product ID: </label>
-                    <input type="text" name="productId" pattern="^\d{8}$" required>
+                    <input type="text" id="product-id" name="productId" pattern="^\d{8}$" required />
                 </div>
 
                 <!-- Product Description -->
                 <div class="individualForm">
                     <label for="description" title="Must start with a cap and only alphabet allowed. Must contain at least 20 characters.">Product Description: </label>
-                    <textarea name="desc" required></textarea>
+                    <textarea name="desc" id="description" required></textarea>
 
                 </div>
 
                 <!-- Price -->
                 <div class="individualForm">
                     <label for="price" title="Digit only, decimal not allowed. Less than 1000.">Price: </label>
-                    <input type="text" name="price" pattern="^\d{1,3}$" required></input>
+                    <input type="text" id="price" name="price" pattern="^\d{1,3}$" required />
 
                 </div>
 
                 <!-- Supplier Username -->
                 <div class="individualForm">
                     <label for="username" title="Must start with an alphabet, at least 6 characters.">Supplier Username: </label>
-                    <input type="text" name="username" required>
+                    <input type="text" id="username" name="username" required />
 
                 </div>
 
                 <!-- Supplier Status -->
                 <div class="individualForm">
-                    <label for="status" title="Must select at least one of the check boxes.">Supplier Status: </label>
+                    <label title="Must select at least one of the check boxes.">Supplier Status: </label>
                     <div class="checkboxDiv">
-                        <input type="checkbox" name="status" value="New Supplier">New Supplier<br />
-                        <input type="checkbox" name="status" value="Contract Signed">Contract Signed<br />
-                        <input type="checkbox" name="status" value="Quality Tested">Quality Tested
+                        <input type="checkbox" name="status" value="New Supplier" />New Supplier<br />
+                        <input type="checkbox" name="status" value="Contract Signed" />Contract Signed<br />
+                        <input type="checkbox" name="status" value="Quality Tested" />Quality Tested
                     </div>
                 </div>
 
                 <!-- Supplier Email -->
                 <div class="individualForm">
                     <label for="email">Supplier Email: </label>
-                    <input type="email" name="email" required>
+                    <input type="email" id="email" name="email" required />
                 </div>
 
                 <div class="submitbutton">
-                    <input type="submit" id="submit" value="Submit">
-                    <input type="reset" id="reset" value="Reset" onclick="clearErrors()">
+                    <input type="submit" id="submit" value="Submit" />
+                    <input type="reset" id="reset" value="Reset" onclick="clearErrors()" />
                 </div>
 
                 <!-- hidden fields -->
@@ -104,12 +103,6 @@
 
         <footer>
             <section class="bottom">
-                <div class="info">
-                    <h3>WEB222</h3>
-                    <p>Section: NDD</p>
-                    <p>Final Assessment</p>
-                </div>
-
                 <div class="github">
                     <h3>Github Link</h3>
                     <p><a href="https://github.com/castlehunter/JS-CSS/blob/main/web222%20code/Final_Assessment/product.html" target="blank">https://github.com/castlehunter/JS-CSS/blob/main/web222%20code/Final_Assessment/product.html</a>
@@ -120,7 +113,6 @@
             ©2022 - &lt;Qing Zhang&gt;
         </footer>
     </div>
-
 </body>
 
 </html>
