@@ -9,6 +9,16 @@ function validateForm() {
     return true;
 }
 
+
+// function validateForm() {
+//     var valid = validateDesc();
+//     if (valid == false) {
+//         return false;
+//     }
+//     alert("Validation passed!");
+//     return true;
+// }
+
 function clearErrors() {
     document.querySelector(".error1").innerHTML = "";
     document.querySelector(".error2").innerHTML = "";
@@ -24,30 +34,26 @@ function validateDesc() {
         document.querySelector(".error1").innerHTML = "Product Description: The first character must be capital.";
         validChecker = false;
     } else {
-        document.querySelector(".error1").innerHTML = "";
-    }
-
-    for (var i = 0; i < input.length; i++) {
-        if (input.charAt(i).toUpperCase() < "A" || input.charAt(i).toUpperCase() > "Z") {
-            document.signup.desc.focus();
-            caseChecker = false;
+        document.querySelector(".error1").innerHTML = ""
+        for (var i = 0; i < input.length; i++) {
+            if (input.charAt(i).toUpperCase() < "A" || input.charAt(i).toUpperCase() > "Z") {
+                document.signup.desc.focus();
+                caseChecker = false;
+            }
+        }
+        if (caseChecker == false) {
+            document.querySelector(".error1").innerHTML = ""
+            document.querySelector(".error1").innerHTML = "Product Description: Only alphabet allowed."
+            validChecker = false;
+        } else {
+            document.querySelector(".error1").innerHTML = ""
+            if (input.length < 20) { // check length of textarea
+                document.signup.desc.focus();
+                document.querySelector(".error1").innerHTML = "Product Description: Must be at least 20 characters."
+                validChecker = false;
+            }
         }
     }
-    if (caseChecker == false) {
-        document.querySelector(".error1").innerHTML = "Product Description: Only alphabet allowed."
-        validChecker = false;
-    } else {
-        document.querySelector(".error1").innerHTML = "";
-    }
-
-    if (input.length < 20) { // check length of textarea
-        document.signup.desc.focus();
-        document.querySelector(".error1").innerHTML = "Product Description: Must be at least 20 characters."
-        validChecker = false;
-    } else {
-        document.querySelector(".error1").innerHTML = "";
-    }
-
     return validChecker;
 }
 
@@ -59,17 +65,15 @@ function validateUsername() {
         document.querySelector(".error2").innerHTML = "Supplier Username: Must start with an alphabet."
         return false;
     } else {
-        document.querySelector(".error2").innerHTML = "";
+        document.querySelector(".error2").innerHTML = ""
+        if (input.length < 6) { // check length of textarea
+            document.signup.username.focus();
+            document.querySelector(".error2").innerHTML = "Supplier Username: Must be at least 6 characters."
+            return false;
+        } else {
+            document.querySelector(".error2").innerHTML = ""
+        }
     }
-
-    if (input.length < 6) { // check length of textarea
-        document.signup.username.focus();
-        document.querySelector(".error2").innerHTML = "Supplier Username: Must be at least 6 characters."
-        return false;
-    } else {
-        document.querySelector(".error2").innerHTML = "";
-    }
-
     return true;
 }
 

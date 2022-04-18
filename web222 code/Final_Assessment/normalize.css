@@ -142,7 +142,11 @@ form {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
     padding: 10px;
-    width: 30%;
+    width: 40%;
+}
+
+form h2,
+p {
     text-align: center;
 }
 
@@ -156,6 +160,11 @@ form {
     vertical-align: top;
 }
 
+.errors h2,
+p {
+    text-align: center;
+}
+
 .errors .error1,
 .error2,
 .error3 {
@@ -166,7 +175,6 @@ form {
 form .individualForm {
     display: flex;
     margin-top: 15px;
-    text-align: center;
 }
 
 .product #browserTest {
@@ -187,10 +195,14 @@ form .individualForm {
 .product input,
 textarea {
     font: 1em sans-serif;
-    width: 200px;
+    width: 400px;
     box-sizing: border-box;
     border: 1px solid #999;
     vertical-align: top;
+}
+
+.product textarea {
+    height: 200px;
 }
 
 .product .checkboxDiv {
@@ -281,22 +293,25 @@ footer {
     background-color: rgb(80, 118, 151);
     border: 2px black solid;
     border-radius: 10px;
-    text-align: center;
     color: white;
+    text-align: center;
 }
 
 section.bottom {
     display: flex;
-    justify-content: space-between;
     padding: 0 20px;
     text-align: left;
 }
 
 .bottom .info {
     margin: 0 30px;
-    width: 30%;
+    width: 20%;
 }
 
 .bottom .github {
     margin: 0 30px;
+}
+
+.bottom .github a {
+    color: white;
 }
