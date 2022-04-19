@@ -62,7 +62,7 @@ header .banner {
     font-weight: bold;
     height: 15px;
     line-height: 15px;
-    color: rgb(0, 0, 0);
+    color: rgb(21, 56, 131);
     font-size: 14px;
     padding: 10px;
     -webkit-border-radius: 10px;
@@ -208,6 +208,7 @@ textarea {
 
 .submitbutton {
     margin-top: 30px;
+    text-align: center;
 }
 
 .submitbutton #submit,
@@ -264,4 +265,8 @@ section.bottom {
 
 .bottom .github a {
     color: white;
+}
+
+.empty {
+    height: 600px;
 }
