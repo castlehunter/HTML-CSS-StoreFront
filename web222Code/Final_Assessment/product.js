@@ -9,7 +9,6 @@ function validateForm() {
     return true;
 }
 
-
 function clearErrors() {
     document.querySelector(".error1").innerHTML = "";
     document.querySelector(".error2").innerHTML = "";
