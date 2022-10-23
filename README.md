@@ -1,1 +1,1 @@
-# web222
+# A storefront website made with JavaScript
