@@ -1,1 +1,1 @@
-# A storefront website made with JavaScript
+# A storefront website: HTML, CSS
